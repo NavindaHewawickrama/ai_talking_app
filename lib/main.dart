@@ -15,3 +15,15 @@ class _ChatScreenState extends State<ChatScreen>{
   @override
   _ChatScreenState createState() => _ChatScreenState(); 
 }
+
+class _ChatScreenStat extends StatefulWidget{
+  @override
+  _ChatScreenState createState() => _ChatScreenState();
+}
+
+class _ChatScreenState extends State<ChatScreen>{
+  stt.SpeechToText _speech = stt.SpeechToText();
+  FlutterTts _tts = FlutterTts();
+  bool _isListening = false;
+  String _spokenText = "";
+}
